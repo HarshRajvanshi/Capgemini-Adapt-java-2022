@@ -1,0 +1,57 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+// Class name should be "Source",
+// otherwise solution won't be accepted
+public class Source {
+  public static String[] getCustomer(String name){ 
+  String customerDetails[][]=new String[5][3];
+	customerDetails[0][0]="1001";
+	customerDetails[0][1]="Raj";
+	customerDetails[0][2]="Chennai";
+	
+	customerDetails[1][0]="1008";
+	customerDetails[1][1]="Akshay";
+	customerDetails[1][0]="Pune";
+	
+	customerDetails[2][0]="1002";
+	customerDetails[2][1]="Simrath";
+	customerDetails[2][2]="Amristar";
+	
+	customerDetails[3][0]="1204";
+	customerDetails[3][1]="Gaurav";
+	customerDetails[3][2]="Delhi";
+	
+	customerDetails[4][0]="1005";
+	customerDetails[4][1]="Ganesh";
+	customerDetails[4][2]="Chennai";
+	
+	
+	 for (String cust[] : customerDetails) {
+         if (cust[1].equals(name)) {
+            return cust;
+         }
+      }
+      return null;
+	
+	
+  }
+  
+	public static void main(String args[] ) throws Exception {
+	    
+	    Scanner input=new Scanner(System.in);
+	    String name=input.nextLine();
+	    String customer[]=getCustomer(name);
+	    if(customer!=null)
+	    {
+	      System.out.print(customer[0]+"\n"+customer[1]+"\n"+customer[2]);  
+	    }
+	    else{
+	    System.out.print("No Record Found");
+	    }
+	    
+		/* Enter your code here. Read input from STDIN. Print output to STDOUT */
+	}

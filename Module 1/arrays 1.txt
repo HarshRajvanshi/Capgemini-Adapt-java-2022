@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+// Class name should be "Source",
+// otherwise solution won't be accepted
+public class Source {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        
+        int min=Integer.MAX_VALUE;
+        int max=Integer.MIN_VALUE;
+        if(n<=20 && n>=1){
+            int[] arr=new int[n];
+            for(int i=0;i<n;i++){
+                arr[i]=in.nextInt();
+                if(arr[i]>max){
+                    max=arr[i];
+                }
+                if(arr[i]<min){
+                    min=arr[i];
+                }
+            }
+            System.out.println("MIN="+min+"\n"+"MAX="+max);
+            
+        }
+        else{
+            System.out.println("INVALID_INPUT");
+        }
+        
+        // Declare the variable
+        
+   }
+}

@@ -1,0 +1,39 @@
+import java.util.*;
+
+// Class name should be "Source",
+// otherwise solution won't be accepted
+public class Source {
+	public static void main(String args[] ) throws Exception {
+	    Scanner input=new Scanner(System.in);
+	    int n=input.nextInt();
+	    if(n<1){
+	        System.out.println("INVALID INPUT");
+	    }
+	    else{
+	    String[] arr=new String[n];
+	    int count=0;
+	    for(int i=0;i<n;i++){
+	        arr[i]=input.nextLine();
+	        if(arr[i].contains("HR")){
+	            count++;
+	        }
+	    }
+	    if(count>=1){
+	        System.out.println("Total "+count+" designations in HR Department");
+	        
+	        for(int i=0;i<arr.length;i++){
+	            if(arr[i].contains("HR")){
+	                System.out.println(arr[i].toUpperCase());
+	            }
+	        }
+	    }
+	    else{
+	        System.out.println("No designation of HR department found in given data");
+	    }
+	    
+	        
+	    }
+	    
+		/* Enter your code here. Read input from STDIN. Print output to STDOUT */
+	}
+}

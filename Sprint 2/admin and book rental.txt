@@ -1,0 +1,166 @@
+import java.time.LocalDateTime;
+
+class Admin
+{
+	private int adminId;
+	private String email;
+	private String firstName;
+	private String password;
+	
+	public Admin() 
+	{
+	}
+	
+	public Admin(int adminId, String email, String firstName, String password) 
+	{
+		this.adminId = adminId;
+		this.email = email;
+		this.firstName = firstName;
+		this.password = password;
+	}
+
+	//getters & setters
+	public int getAdminId() 
+	{
+		return adminId;
+	}
+
+	public String getEmailId() 
+	{
+		return email;
+	}
+
+	public String getFirstName() 
+	{
+		return firstName;
+	}
+
+	public String getPassword() 
+	{
+		return password;
+	}
+
+	public void setAdminId(int adminId) 
+	{
+		this.adminId = adminId;
+	}
+
+	public void setEmailId(String email)
+	{
+		this.email = email;
+	}
+
+	public void setFirstName(String firstName) 
+	{
+		this.firstName = firstName;
+	}
+
+	public void setPassword(String password)
+	{
+		this.password = password;
+	}
+
+	@Override
+	public String toString() 
+	{
+		return "Admin [adminId=" + adminId + ", emailId=" + email + ", firstName=" + firstName 
+		+ ", password=" + password+"]";
+	}
+}
+
+class Book
+{
+	private int bookId;
+	private String title;
+	private String description;
+	private String author;
+	private int availableQuantity;
+	private int totalQuantity;
+	private double price;
+	private double rentPerDay;
+	
+	public Book() 
+	{
+	
+	}
+
+	public Book(int bookId,String title,String description,String author,int availableQuantity,int totalQuantity,double price,double rentPerDay) 
+	{
+	    this.bookId=bookId;
+	    this.title=title;
+	    this.description=description;
+	    this.author=author;
+	    this.availableQuantity=availableQuantity;
+	    this.totalQuantity=totalQuantity;
+	    this.price=price;
+	    this.rentPerDay=rentPerDay;
+	}
+	public int getBookId()
+	{
+	    return bookId;
+	}
+	public String getTitle()
+	{
+	    return title;
+	}
+	public String getDescription()
+	{
+	    return description;
+	}
+	public String getAuthor()
+	{
+	    return author;
+	}
+	public int getAvailableQuantity()
+	{
+	    return availableQuantity;
+	}
+	public int getTotalQuantity()
+	{
+	    return totalQuantity;
+	}
+	public double getPrice()
+	{
+	    return price;
+	}
+	public double getRentPerDay()
+	{
+	    return rentPerDay;
+	}
+	public void setBookId(int bookId)
+	{
+	    this.bookId=bookId;
+	}
+	public void setTitle(String title)
+	{
+	    this.title=title;
+	}
+	public void setDescription(String description)
+	{
+	    this.description=description;
+	}
+	public void setAuthor(String author)
+	{
+	    this.author=author;
+	}
+	public void setAvailableQuantity(int availableQuantity)
+	{
+	    this.availableQuantity=availableQuantity;
+	}
+	public void setTotalQuantity(int totalQuantity)
+	{
+	    this.totalQuantity=totalQuantity;
+	}
+	public void setPrice(double price)
+	{
+	    this.price=price;
+	}
+	public void setRentPerDay(double rentPerDay)
+	{
+	    this.rentPerDay=rentPerDay;
+	}
+	@Override
+	public String toString() {
+		return "Book[bookId="+bookId+", title="+title+", description="+description+", author="+author+", availableQuantity="+availableQuantity+", totalQuantity="+totalQuantity+", price="+price+", rentPerDay="+rentPerDay+"]";
+	}
+}
